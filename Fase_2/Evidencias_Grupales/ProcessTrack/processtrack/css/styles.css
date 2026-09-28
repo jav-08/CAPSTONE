@@ -1,0 +1,515 @@
+/* ==========================================================
+   ProcessTrack — estilos base
+   ========================================================== */
+
+:root {
+  --color-primary: #4fc1e9;
+  --color-primary-dark: #3aa9d1;
+  --color-card: #e8e8ec;
+  --color-card-border: #d6d6dc;
+  --color-danger: #e8636b;
+  --color-warning: #f3d16b;
+  --color-success: #6fcf97;
+  --color-neutral: #8f8f9a;
+  --color-text: #1a1a1f;
+  --color-text-muted: #55555c;
+  --color-white: #ffffff;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 48px 64px;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin: 0 0 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d0d0d5;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.navbar-left .divider {
+  width: 1px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 0.95rem;
+}
+
+.navbar-right a.active {
+  font-weight: 700;
+}
+
+.btn-perfil {
+  background: var(--color-neutral);
+  color: var(--color-white);
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 40px 48px;
+  margin-top: 48px;
+}
+
+.site-footer h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.site-footer p {
+  margin: 0 0 6px;
+  max-width: 480px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ---------- Botones genéricos ---------- */
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-text);
+}
+
+.btn-success {
+  background: var(--color-success);
+  color: var(--color-white);
+}
+
+.btn-danger {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+.btn-neutral {
+  background: var(--color-neutral);
+  color: var(--color-white);
+}
+
+.btn:disabled,
+.btn-neutral[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ---------- Inputs ---------- */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--color-card-border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: var(--color-white);
+  font-family: inherit;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+/* ---------- Tarjeta genérica ---------- */
+.card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+/* ==========================================================
+   Login
+   ========================================================== */
+.login-page main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+}
+
+.login-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  align-self: flex-start;
+  margin-left: calc((100% - 480px) / 2 * -1);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 24px;
+}
+
+.login-card .btn {
+  float: right;
+  margin-top: 12px;
+}
+
+.login-forgot {
+  color: var(--color-primary-dark);
+  font-size: 0.9rem;
+}
+
+/* ==========================================================
+   Listado de empresas
+   ========================================================== */
+.search-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  max-width: 560px;
+}
+
+.search-row .field {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.search-row .btn {
+  padding: 10px 22px;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.company-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.company-card::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0.85;
+}
+
+.company-card h2 {
+  border-bottom: 1px solid #b9b9c2;
+  padding-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.company-card p {
+  position: relative;
+  z-index: 1;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  max-width: 75%;
+}
+
+/* ==========================================================
+   Lista de pedidos
+   ========================================================== */
+.order-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 420px));
+  gap: 32px 48px;
+}
+
+.order-card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: 24px 24px 0;
+  overflow: hidden;
+}
+
+.order-card h2 {
+  border-bottom: 1px solid #b9b9c2;
+  padding-bottom: 8px;
+}
+
+.order-status {
+  margin: 20px -24px 0;
+  padding: 14px 24px;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.status-pendiente {
+  background: var(--color-danger);
+}
+
+.status-proceso {
+  background: var(--color-warning);
+}
+
+.status-completado {
+  background: var(--color-success);
+}
+
+/* ==========================================================
+   Estado de pedido / Pedido (cliente / empresa)
+   ========================================================== */
+.order-detail {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Timeline (Estado de pedido) */
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 24px;
+}
+
+.timeline-step {
+  grid-column: 1;
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  position: relative;
+}
+
+.timeline-step.is-start {
+  background: transparent;
+  color: var(--color-text);
+  font-weight: 700;
+  text-align: center;
+}
+
+.timeline-time {
+  grid-column: 2;
+  align-self: center;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.timeline-connector {
+  grid-column: 1;
+  width: 1px;
+  height: 32px;
+  background: #b9b9c2;
+  justify-self: center;
+}
+
+/* Formulario de información / materiales (panel derecho) */
+.info-panel h2.panel-title {
+  font-size: 1.6rem;
+  border-bottom: 1px solid #b9b9c2;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.info-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 32px;
+}
+
+.info-columns h3 {
+  font-size: 0.95rem;
+  border-bottom: 1px solid #b9b9c2;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+/* Información adicional + acciones (pedido cliente/empresa) */
+.additional-info {
+  background: var(--color-card);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.additional-info-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  gap: 16px;
+}
+
+/* ==========================================================
+   Perfil
+   ========================================================== */
+.profile-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 40px;
+}
+
+.chart-card {
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.chart-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background: conic-gradient(
+    var(--color-primary-dark) 0turn 0.55turn,
+    #16305f 0.55turn 0.78turn,
+    #6f4fd9 0.78turn 0.85turn,
+    #7fe0c9 0.85turn 1turn
+  );
+}
+
+.chart-legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  font-size: 0.9rem;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.field-with-edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-with-edit input,
+.field-with-edit textarea {
+  flex: 1;
+}
+
+.edit-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #b9b9c2;
+  margin: 24px 0 16px;
+}
+
+.history-link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 960px) {
+  .navbar,
+  main,
+  .site-footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .company-grid,
+  .order-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-detail,
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .info-columns {
+    grid-template-columns: 1fr;
+  }
+}

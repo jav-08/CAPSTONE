@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProcessTrack — Perfil</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="navbar" class="navbar"></header>
+
+  <main>
+    <h1>Perfil</h1>
+
+    <div class="profile-layout">
+      <div class="chart-card">
+        <div class="chart-placeholder"></div>
+        <div class="chart-legend">
+          <span><span class="legend-dot" style="background:#6f4fd9"></span>Cancelado</span>
+          <span><span class="legend-dot" style="background:#7fe0c9"></span>Rechazado</span>
+          <span><span class="legend-dot" style="background:#16305f"></span>En proceso</span>
+          <span><span class="legend-dot" style="background:#3aa9d1"></span>Completado</span>
+        </div>
+      </div>
+
+      <div>
+        <h2>Información</h2>
+        <div class="field">
+          <label>Nombre de empresa</label>
+          <input type="text" placeholder="empresa" disabled />
+        </div>
+        <div class="field">
+          <label>Dirección de correo electrónico</label>
+          <input type="email" placeholder="email@ejemplo.com" disabled />
+        </div>
+        <div class="field">
+          <label>Descripción</label>
+          <textarea rows="6" placeholder="agregar una descripción" disabled></textarea>
+        </div>
+      </div>
+
+      <div>
+        <h2>Contactos</h2>
+        <div class="field">
+          <label>Contacto 1</label>
+          <input type="text" disabled />
+        </div>
+        <div class="field">
+          <label>Contacto 2</label>
+          <input type="text" disabled />
+        </div>
+        <div class="field">
+          <label>Contacto 3</label>
+          <input type="text" disabled />
+        </div>
+        <div class="field">
+          <label>Contacto 4</label>
+          <input type="text" disabled />
+        </div>
+        <hr class="section-divider" />
+        <div class="field">
+          <label>Mermas estimadas</label>
+          <input type="text" placeholder="X%" disabled />
+        </div>
+        <button class="btn btn-success">Iniciar pedido</button>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer" class="site-footer"></footer>
+  <script src="js/components.js"></script>
+</body>
+</html>
