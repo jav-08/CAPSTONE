@@ -1,0 +1,15 @@
+(venv) C:\Users\VIER\Desktop\processtrack_nube\processtrack0.1.4>findstr /s /i /c:"|safe" /c:"autoescape" pedidos\*.html perfiles\*.html cuentas\*.html portal\*.html templates\*.html
+
+(venv) C:\Users\VIER\Desktop\processtrack_nube\processtrack0.1.4>echo Codigo de salida: %errorlevel%
+Codigo de salida: 1
+
+(venv) C:\Users\VIER\Desktop\processtrack_nube\processtrack0.1.4>findstr /s /i /c:"|safe" venv\Lib\site-packages\django\forms\templates\django\forms\*.html
+venv\Lib\site-packages\django\forms\templates\django\forms\field.html:{% if field.help_text %}<div class="helptext"{% if field.auto_id %} id="{{ field.auto_id }}_helptext"{% endif %}>{{ field.help_text|safe }}</div>{% endif %}
+venv\Lib\site-packages\django\forms\templates\django\forms\p.html:      <span class="helptext"{% if field.auto_id %} id="{{ field.auto_id }}_helptext"{% endif %}>{{ field.help_text|safe }}</span>
+venv\Lib\site-packages\django\forms\templates\django\forms\table.html:        <span class="helptext"{% if field.auto_id %} id="{{ field.auto_id }}_helptext"{% endif %}>{{ field.help_text|safe }}</span>
+venv\Lib\site-packages\django\forms\templates\django\forms\ul.html:      <span class="helptext"{% if field.auto_id %} id="{{ field.auto_id }}_helptext"{% endif %}>{{ field.help_text|safe }}</span>
+
+(venv) C:\Users\VIER\Desktop\processtrack_nube\processtrack0.1.4>echo Codigo de salida: %errorlevel%
+Codigo de salida: 0
+
+(venv) C:\Users\VIER\Desktop\processtrack_nube\processtrack0.1.4>
