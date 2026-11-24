@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Iniciar Sesión con contraseña incorrecta</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e09d040d-235c-4a41-ad1b-39372042996c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Limpiar busqueda de empresa</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cd1f2d78-7551-49d4-bc0c-3d4b63694cf9</testCaseGuid>
+</TestCaseEntity>

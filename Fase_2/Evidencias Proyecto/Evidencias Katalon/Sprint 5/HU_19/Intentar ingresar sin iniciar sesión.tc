@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Intentar ingresar sin iniciar sesión</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>02c13159-8f17-4fc3-a97b-e8cbb31c0813</testCaseGuid>
+</TestCaseEntity>

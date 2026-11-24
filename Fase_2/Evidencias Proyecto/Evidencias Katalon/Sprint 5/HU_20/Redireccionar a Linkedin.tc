@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Redireccionar a Linkedin</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>746c9021-06e5-41a3-bdd8-1cfc4e0a33b2</testCaseGuid>
+</TestCaseEntity>

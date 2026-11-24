@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Cambiar correo de empresa con campo vacio</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>434d1cb4-39dc-48bc-8c4f-c10d6742003a</testCaseGuid>
+</TestCaseEntity>
