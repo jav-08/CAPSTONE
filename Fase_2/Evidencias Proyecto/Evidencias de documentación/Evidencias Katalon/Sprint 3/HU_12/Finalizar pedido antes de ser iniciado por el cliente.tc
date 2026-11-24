@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Finalizar pedido antes de ser iniciado por el cliente</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>95db66fe-a020-4d79-96db-021e082e5169</testCaseGuid>
+</TestCaseEntity>
